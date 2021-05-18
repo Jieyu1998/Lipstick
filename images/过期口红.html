@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>过期口红</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js">
+	</script>
+	<script src="js/jquery.dropotron.min.js">
+	</script>
+	<script src="js/skel.min.js">
+	</script>
+	<script src="js/skel-layers.min.js">
+	</script>
+	<script src="js/init.js">
+	</script>
+	<script src="js/echarts.min.js">
+	</script>
+	<noscript>
+		<link rel="stylesheet" href="css/skel.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-desktop.css" />
+	</noscript>
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+    <link rel="stylesheet" href="editormd/css/editormd.css" />
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js">
+    </script>
+    <script src="editormd/editormd.min.js">
+    </script>
+
+</head>
+
+<body class="homepage">
+
+
+
+	<!-- 红 -->
+	<div id="header-wrapper" class="wrapper style1">
+		<div id="header" class="wrapper style1">
+			<div id="logo">
+				<h1><a href="#">红</a></h1>
+			</div>
+		<nav id="nav">
+			<ul>
+				<li><a href="口红消费.html">口红消费</a>
+					<ul>
+						<li><a href="#">口红消费态度</a></li>
+						<li><a href="#">谁最流行</a></li>
+					</ul>
+				</li>
+				<li><a href="女性的暗号.html">女性的“暗号”</a>
+					<ul>
+						<li><a href="#">口红色号</a></li>
+						<li><a href="#">色号命名</a></li>
+						<li><a href="#">口红色号分布</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	</div>
+
+	<!-- 黑 -->
+	<div id="intro-wrapper" class="wrapper style4">
+		<div class="title">黑</div>
+			<nav id="nav">
+				<ul>
+					<li>
+						<a href="口红成分.html">口红到底含有什么成分？</a>
+						<ul>
+							<li><a href="#">口红成分变迁</a></li>
+							<li><a href="#">孕妇&儿童可用口红</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="购买陷阱.html">购买时的陷阱</a>
+                        <ul>
+                            <li><a href="#">是正品还是山寨？</a></li>
+                            <li><a href="#">颜色鬼打墙</a></li>
+                        </ul>
+                    </li>
+					<li><a href="过期口红.html">过期口红还能使用吗？</a>
+						<ul>
+							<li><a href="#">口红保质期</a></li>
+							<li><a href="#">过期口红变质问题</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		<section id="intro" class="container">
+            <br/>
+					<p class="style4"><p>化妆品都有保质期，口红也不例外。口红的包装上会印有<strong>限用期</strong>，超过限用日期就属于过期。少数口红还有<strong>开封保质期</strong>。然而在使用过程中，要想查明生产日期却不是一件方便的事。由于口红使用环境和口红的配方构成，过期口红也不易明显变质，因此许多人纷纷笑称：“只有我死的那天，我的口红才算过期。”</p>
+					</ul>
+				</section>
+	</div>
+
+	<!-- Body -->	
+	<!-- 口红保质期 -->
+	<div class="wrapper style2">
+		<section id="features">
+		<div class="title">过期口红还能使用吗？</div>
+		<h1>口红保质期</h1>
+		<img src="images/开封后保质期图示.png" style="width: 300px;height:150px;margin:0 auto" alt="" />
+		<p>化妆品都有保质期，口红在国外的保质期要求是五年，而在国内官方要求保质期是三年。口红的包装上会印有限用期，即保质期，一般为2-3年，超过限用日期就属于过期。口红还有开封后保质期，会印在管体上（为开封的图样,见上图），一般为12-24个月。同一品牌的不同口红，由于配方的不同，开封保质期也不尽相同。一般来说，固体口红比液体口红的开封后保质期更长。</p>
+	<div id="开封后保质期" style="width: 800px;height:600px;margin:0 auto"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('开封后保质期'));
+
+        // 指定图表的配置项和数据
+        option = {
+    color:['#c23531'],
+    visualMap: {
+        show: false,
+        min: 0,
+        max: 18,
+        inRange: {
+            colorLightness: [0.3, 0.9]
+        }
+    },
+    title: {
+        text: '口红开封后保质期',
+        subtext: '数据来自网络'
+    },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: {
+    	name:'/月',
+        type: 'value',
+        show:true
+    },
+    yAxis: {
+        type: 'category',
+        data:['MAC棒棒糖口红', 'Nars丝绒唇釉', '植村秀唇膏', 'MAC子弹头口红', '纪梵希小羊皮', 'YSL黑管唇釉', '香奈儿丝绒唇釉', 'Dior漆光唇釉', '娇兰宝石唇膏', 'Tom Ford黑管口红', '爱丽小屋染唇液', 'Hourglass烟管口红', 'PAT唇膏', '阿玛尼小胖丁', 'KIKO唇膏', 'YSL圆管口红', 'YSL小金条口红', '阿玛尼红管唇釉']
+    },
+    series: [
+        {
+            name: '开封后保质期（月）',
+            type: 'bar',
+            data: [6, 6, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 18, 24, 24, 24]
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+		<p>为了知晓口红确切的过期时间，不仅需要知道保质期时长，还需要知道生产日期。生产日期一般印在产品外包装上，然而，购买口红后出于使用方便，大多数人都会把外包装丢弃。口红管体上还会印有产品批号，同样可以用于生产日期的查询。但一来不同国家的不同品牌，产品批号的语言、构成规则不尽相同，需要下载专门的软件查询，便利性大大降低；二来使用过程中，印刷的产品批号可能会产生磨损，导致模糊不清，难以辨认。因此，尽管有多种查询口红过期时间的方法，但在实际操作过程中，并不便捷。这也导致许多人仍在使用过期口红而不自知。</p>
+		<div id="图表">
+		<img src="images/口红生产批号.png" style="width: 400px;height:450px;" alt="" />
+		<p>部分品牌口红生产批号查询</p>
+	    </div>
+	</section>
+
+
+	<!-- 过期口红变质问题 -->
+	<section id="features">
+	<h1>过期口红变质问题</h1>
+	<p>为了测试过期口红的安全性，某测评机构将77支过期时长不等（过期一年～过期十年）的口红，参照《化妆品安全技术规范 2015 版》中微生物的检测方法进行实测。得出结论：大部分过期的口红，微生物含量一般没什么问题，只要颜色质地气味没有变化，还是可以使用的。原因在于口红的主要成分构成、极低甚至为零的含水量，有的还会添加防腐剂，保证了口红在正常环境中不容易滋生微生物。</p>
+	<img src="images/过期口红.jpg" style="width: 150px;height:100px;" alt="" />
+	<p>但口红放久了容易发生油脂酸败。当油脂氧化成挥发性的酸和过氧化脂质，味道会变得越来越难闻，而且接触皮肤会有刺激性，对黏膜刺激性更强。因此涂过期的口红，唇炎和过敏的风险比较大。因此，不变质不代表能继续安心使用。不要用自己的健康去试探风险。</p>
+
+
+							<ul class="actions actions-centered">
+								<li><a href="#" class="button style1 big">未完待续</a></li>
+							</ul>
+				</div>
+			</div>
+
+
+		<!-- Footer -->
+			<div id="footer-wrapper">
+				<div id="copyright" class="wrapper">
+					<ul>
+						<li>Designed by Vivian</li>
+					</ul>
+				</div>
+			</div>
+
+	</body>
+</html>
